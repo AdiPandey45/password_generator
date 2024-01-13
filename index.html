@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="mini.css">
+</head>
+<body>
+ <div class="wrapper">
+  <div class="para">
+    <h2>Password Generator</h2>
+  </div>
+  <div class="password">
+    <input class="PasswordDisplay" readonly placeholder="Password">
+    <button class="copyBtn">
+<span data-copyMsg>
+</span>
+<img src="copy.jpg" alt="sorry" loading="lazy" width="20px" height="15px" data-copy>
+    </button>
+  </div>
+  <div class="content">
+    <div class="char">
+      <p>Password Length</p>
+      <p class="range1">4</p>
+    </div>
+   
+      <input type="range" min="1" max="20" class="slider" step="1">
+   <div class="all">
+    <div>
+      <input type="checkbox" name="choose" id="upper">
+      <label for="upper">Include Uppercase Letters</label>
+     </div>
+        <div>
+          <input type="checkbox" name="choose" id="lower">
+          <label for="lower">Include Lowercase Letters</label>
+        </div>
+        <div>
+  
+          <input type="checkbox" name="choose" id="numbers">
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" name="choose" id="symbols">
+          <label for="symbols">Include Symbols</label>
+        </div>
+   </div>
+  
+    
+    
+    <div class="strength">
+      <h3>Strength</h3>
+      <div class="indicator" data-indicator></div>
+    </div>
+
+    
+      <button class="generate">Generate Password</button>
+    
+  </div>
+ </div>
+  <script src="mini1.js"></script>
+</body>
+</html>
